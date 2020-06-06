@@ -3,4 +3,32 @@
     display: grid;
     grid-template-columns: 2fr 1fr .5fr;
     grid-column-gap: 1vw;
+    button{
+        font-size: 1em;
+        max-width: 11vw;
+        min-width: 100px;
+        max-height: 6vw;
+        min-height: 30px;
+    }
+}
+
+
+@media screen and(max-width: 768px){
+    .operation{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-row-gap: 2vw;
+    }
+}
+
+@media screen and(max-width: 576px){
+    .operation{
+        display: flex;
+        flex-direction: column;
+        select{
+            max-width: 60%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
 }

@@ -28,7 +28,7 @@
     h2{
         font-family: 'Lato', sans-serif;
         color: #223046;
-        font-size: 1.6vw;
+        font-size: 1.6em;
         cursor: pointer;
 
     }
@@ -44,5 +44,17 @@
         color: #223046;
         font-size: 1.6vw;
         cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .headerWrap{
+display: flex;
+flex-direction: column;
+
+        .person{
+           display: none; 
+        } 
     }
 }

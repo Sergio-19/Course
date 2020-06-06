@@ -365,10 +365,10 @@ renderInputs = () =>{
     })
 
 
-    axios('https://rateapp-f0b22.firebaseio.com/sample.json')
+    axios('https://course-918e5.firebaseio.com/sample.json')
 
    .then((response)=>{
-    this.setState({sampleList: response.data})
+    this.setState({sampleList: response.data || ''})
    })
 
 

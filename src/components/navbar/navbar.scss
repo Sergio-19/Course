@@ -20,11 +20,12 @@ nav{
             display: inline-block;
             align-self: center;
             transition: all .2s ease-in;
+            
 
             a{
                 text-decoration: none;
                 font-family: 'Roboto', sans-serif;
-                font-size: 1vw;
+                font-size: 1rem;
                 color: #223046;
 
             }
@@ -32,6 +33,19 @@ nav{
                 color: black;
             }
             
+        }
+    }
+}
+
+@media screen and(max-width: 576px){
+    nav{
+        ul{
+            display: flex;
+            flex-direction: column;
+
+            li{
+                margin-bottom: 20px;
+            }
         }
     }
 }
